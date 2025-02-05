@@ -1,0 +1,38 @@
+[{
+  "_id": {
+    "$oid": "67a3c921764da639393c71bb"
+  },
+  "name": "Pichiya",
+  "description": "Gordo, hace pan",
+  "age": 8,
+  "type": "CERDITO",
+  "keeper": {
+    "$oid": "67a3c54d764da639393c71b6"
+  },
+  "status": true,
+  "createdAt": {
+    "$date": "2025-02-05T20:25:05.241Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-05T20:25:05.241Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3cf35c66423f237276602"
+  },
+  "name": "Werner",
+  "description": "Pequeno amigo",
+  "age": 8,
+  "type": "PITUFO",
+  "keeper": {
+    "$oid": "67a3c54d764da639393c71b6"
+  },
+  "status": false,
+  "createdAt": {
+    "$date": "2025-02-05T20:51:01.862Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-05T22:46:23.428Z"
+  }
+}]

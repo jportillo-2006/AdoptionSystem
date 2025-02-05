@@ -1,0 +1,42 @@
+[{
+  "_id": {
+    "$oid": "67a3c54d764da639393c71b6"
+  },
+  "name": "Luis Angel",
+  "surname": "Pichiya sisimit",
+  "username": "lpichiya",
+  "email": "lpichiya2023396@kinal.edu.gt",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$fxyEFo898y/2mHAW30GKIg$UhPWk28/GUfQzGDDdzGy9pnFC6dJ37XQxgVdD5kbPhw",
+  "profilePicture": null,
+  "phone": "45996580",
+  "role": "ADMIN_ROLE",
+  "estado": true,
+  "google": false,
+  "createdAt": {
+    "$date": "2025-02-05T20:08:45.234Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-05T20:08:45.234Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "67a3e997947fc034ad3feb8c"
+  },
+  "name": "Josue",
+  "surname": "Jax",
+  "username": "jyax",
+  "email": "palta123@kinal.edu.gt",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$iIU413X81gNQiL6EmuANdg$MBjikJkqFzzZulK0z9e5uMVMXfagwhVdba+uDeyhAAs",
+  "profilePicture": null,
+  "phone": "41929691",
+  "role": "USER_ROLE",
+  "estado": true,
+  "google": false,
+  "createdAt": {
+    "$date": "2025-02-05T22:43:35.028Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-05T22:43:35.028Z"
+  }
+}]
