@@ -1,0 +1,28 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Auth",
+    "collectionId": "0b54b261-5858-4915-ae93-584dd5f4e7ca",
+    "dateExported": "2025-02-20T06:49:32.613Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "64d244d4-4314-4bd8-b488-4e0b62b042d7",
+            "colId": "0b54b261-5858-4915-ae93-584dd5f4e7ca",
+            "containerId": "",
+            "name": "login",
+            "url": "http://localhost:3000/adoptionSystem/v1/auth/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2025-02-20T02:22:02.087Z",
+            "modified": "2025-02-20T02:22:02.087Z",
+            "headers": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"lpichiya2023396@kinal.edu.gt\",\n  \"password\": \"panito123\",\n  \"username\": \"lpichiya\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "GokAGssN3LKhXjWr7sqAs4IoUSQrIid48BIJZN8ctk6XrWIbGZp4e05LPpGMnarmP9mrzCBmW-yx5-SS50SxFg"
+}

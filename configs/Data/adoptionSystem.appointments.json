@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "67b6cf4647ef78f802c5dce0"
+  },
+  "date": {
+    "$date": "2025-03-20T00:00:00.000Z"
+  },
+  "user": {
+    "$oid": "67a3c54d764da639393c71b6"
+  },
+  "pet": {
+    "$oid": "67a3c921764da639393c71bb"
+  },
+  "status": "Pendiente",
+  "notes": "Gorda gorda",
+  "createdAt": {
+    "$date": "2025-02-20T06:44:22.559Z"
+  },
+  "updatedAt": {
+    "$date": "2025-02-20T06:44:22.559Z"
+  }
+}]

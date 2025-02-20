@@ -1,0 +1,45 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "CRUD Pet",
+    "collectionId": "fc50c5a0-bfbd-4ad4-960f-6cf378eb59c0",
+    "dateExported": "2025-02-20T06:49:08.662Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "58489f30-d30f-48a8-bfb1-f54df6987a82",
+            "colId": "fc50c5a0-bfbd-4ad4-960f-6cf378eb59c0",
+            "containerId": "",
+            "name": "Listar Pet",
+            "url": "http://localhost:3000/adoptionSystem/v1/pets/",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2025-02-20T02:01:15.442Z",
+            "modified": "2025-02-20T02:01:15.442Z",
+            "headers": []
+        },
+        {
+            "_id": "83105b88-5fc2-4502-86bc-86fe26f9e0e9",
+            "colId": "fc50c5a0-bfbd-4ad4-960f-6cf378eb59c0",
+            "containerId": "",
+            "name": "New Pet",
+            "url": "http://localhost:3000/adoptionSystem/v1/pets/",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2025-02-20T02:28:02.866Z",
+            "modified": "2025-02-20T02:28:02.866Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2N2EzYzU0ZDc2NGRhNjM5MzkzYzcxYjYiLCJpYXQiOjE3NDAwMTgxMzYsImV4cCI6MTc0MDAyMTczNn0.UX4M7VOdMNsndhTbqmv5eI6O1o2f_dr6i_5BChKN_Co"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Yax\",\n  \"description\": \"Paltita\",\n  \"age\": \"17\",\n  \"type\": \"Palta\",\n  \"email\": \"lpichiya2023396@kinal.edu.gt\"\n}",
+                "form": []
+            }
+        }
+    ],
+    "ref": "tdtziUgdz0r86bhaziVg2WqFujYSnm0NX9jWnWSNZkt4p2_deLlEkgPhEC9KguODYPW6jV42wMz0SRS65T4K_w"
+}

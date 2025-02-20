@@ -71,7 +71,7 @@ export const updateUser = async (req, res = response) => {
             msg: 'Usuario actualizado',
             user
         })
-
+        
     } catch (error) {
         res.status(500).json({
             success: false,
