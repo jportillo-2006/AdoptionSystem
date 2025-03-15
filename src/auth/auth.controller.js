@@ -18,7 +18,7 @@ export const login = async (req, res) => {
             });
         }
 
-        if(!user.estado){
+        if(!user.status){
             return res.status(400).json({
                 msg: 'El usuario no existe en la base de datos'
             });
@@ -53,46 +53,6 @@ export const login = async (req, res) => {
         })
     }
 }
-
-export const updatePassword = async (req, res) => {
-    
-    const { email, oldPassword, newPassword } = req.body;
-
-    try {
-        const user = await Usuario.findOne({ email });
-
-        if (!user) {
-            return res.status(404).json({
-                msg: 'Usuario not found'
-            });
-        }
-
-        const validPassword = await verify(user.password, oldPassword);
-
-        if (!validPassword) {
-            return res.status(400).json({
-                msg: 'Contraseña incorrecta'
-            });
-        }
-
-        const encryptedPassword = await hash(newPassword);
-        user.password = encryptedPassword;
-
-        await user.save();
-
-        return res.status(200).json({
-            msg: 'Contraseña actualizada'
-        });
-
-    } catch (error) {
-        console.log(error);
-
-        return res.status(500).json({
-            msg: 'Error al actualizar contraseña',
-            error
-        });
-    }
-};
 
 export const register = async (req, res) => {
     try {

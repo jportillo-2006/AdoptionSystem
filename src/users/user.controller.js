@@ -5,7 +5,7 @@ import User from './user.model.js'
 export const getUsers = async (req = request, res = response) => {
     try {
         const {limite = 10, desde = 0} = req.query;
-        const query = {estado: true};
+        const query = {status: true};
         
         const [total, users] = await Promise.all([
             User.countDocuments(query),
@@ -81,11 +81,31 @@ export const updateUser = async (req, res = response) => {
     }
 }
 
+export const updatePassword = async (req, res) => {
+    try {
+        const { email, oldPassword, newPassword } = req.body;
+        const user = await Usuario.findOne({ email });
+
+        if (!user) return res.status(404).json({ msg: 'Usuario not found' });
+        
+        if (!await verify(user.password, oldPassword)) 
+            return res.status(400).json({ msg: 'Contraseña incorrecta' });
+
+        user.password = await hash(newPassword);
+        await user.save();
+
+        res.status(200).json({ msg: 'Contraseña actualizada' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ msg: 'Error al actualizar contraseña', error });
+    }
+};
+
 export const deleteUser = async (req, res) => {
     try {
         const {id} = req.params;
         
-        const user = await User.findByIdAndUpdate(id, {estado: false}, {new: true});
+        const user = await User.findByIdAndUpdate(id, {status: false}, {new: true});
 
         const autheticatedUser = req.user;
 

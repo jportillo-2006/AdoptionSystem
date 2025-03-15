@@ -3,13 +3,11 @@ import {Schema, model} from "mongoose";
 const UserSchema = Schema({
     name: {
         type: String,
-        required: [true, 'name in required'],
-        maxLenght: [25, 'cant be overcome 25 characters']
+        required: [true, 'name in required']
     },
     surname:{
         type: String,
-        required: [true, "apellido es requerido"],
-        maxLenght: [25, "No puede sobrepasar los 25 caracteres"]
+        required: [true, "surname is required"],
     },
     username:{
         type: String,
@@ -17,12 +15,12 @@ const UserSchema = Schema({
     },
     email: {
         type: String,
-        required: [true, 'El correo es obligatorio'],
+        required: [true, 'email is required'],
         unique: true
     },
     password: {
         type: String,
-        required: [true, 'La contrasenia es obligatoria']
+        required: [true, 'password is required']
     },
     profilePicture: {
         type: String
@@ -41,7 +39,7 @@ const UserSchema = Schema({
         required: true,
         enum: ['ADMIN_ROLE', 'USER_ROLE']
     },
-    estado: {
+    status: {
         type: Boolean,
         default: true
     },

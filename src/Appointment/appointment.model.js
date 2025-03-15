@@ -17,10 +17,10 @@ const appointmentSchema = Schema({
     },
     status: {
         type: String,
-        enum: ['Pendiente', "Resuelta", "Cancelada"],
-        default: 'Pendiente'
+        enum: ['outstanding', "Resolved", "Canceled"],
+        default: 'outstanding'
     },
-    notes: {
+    comments: {
         type: String
     }
 },
